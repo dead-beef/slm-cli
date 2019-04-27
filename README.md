@@ -27,17 +27,16 @@ npm install slm-cli
 
 ## Usage
 
-```bash
-  Usage: slm [options]
+```
+Usage: slm [options]
 
-
-  Options:
-
-    -V, --version        output the version number
-    -i, --input <file>   input slm file (default: stdin)
-    -o, --output <file>  output html file (default: stdout)
-    -d, --data <file>    template data module
-    -h, --help           output usage information
+Options:
+  -V, --version        output the version number
+  -i, --input <file>   input slm file (default: stdin)
+  -o, --output <file>  output html file (default: stdout)
+  -d, --data <file>    template data module
+  --ng2                support Angular 2+ attribute syntax
+  -h, --help           output usage information
 ```
 
 ## Licenses
