@@ -87,7 +87,7 @@ function main(options) {
 }
 
 const program = require('commander')
-	.version('0.1.0')
+	.version('0.2.0')
 	.option(
 		'-i, --input <file>',
 		'input slm file (default: stdin)'/*,
