@@ -64,19 +64,27 @@ const program = require('commander')
 	.version('0.1.0')
 	.option(
 		'-i, --input <file>',
-		'input slm file (default: stdin)',
-		process.stdin
+		'input slm file (default: stdin)'/*,
+		process.stdin*/
 	)
 	.option(
 		'-o, --output <file>',
-		'output html file (default: stdout)',
-		process.stdout
+		'output html file (default: stdout)'/*,
+		process.stdout*/
 	)
 	.option(
 		'-d, --data <file>',
 		'template data module'
 	)
 	.parse(process.argv);
+
+if(program.input == null) {
+	program.input = process.stdin;
+}
+
+if(program.output == null) {
+	program.output = process.stdout;
+}
 
 main(program).catch((err) => {
 	console.error(err);
